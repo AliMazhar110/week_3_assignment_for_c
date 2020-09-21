@@ -6,62 +6,6 @@
 	<title>Week_3_assignment</title>
 </head>
 <body>
-	<p>
-		/*Asking user to input name,at. wt,
-		sym of elements limit is upto 10 elements only,
-		and then printing them in form of table.*/
-		#include<stdio.h>
-		#include<stdlib.h>
-		#include<string.h> //for string
-		struct table{ //defining structure
-    		char name[20];
-    		char symbol[3];
-    		float wt;
-		};
-		int n; //global variable
-		void display(struct table element[10]) //to print table
-		{
-    		int i,j;
-    		system("clear");
-    		printf("\nSR.NO\t\tELEMENTS\t\tSYMBOLS\t\tATOMIC WEIGHTS");
-    		for (i=0;i<n;i++)
-    		{
-        		printf("\n%d",i+1);
-        		printf("\t\t%.6f",element[i].wt);
-        		printf("\t\t%s",element[i].symbol);
-        		printf("\t\t%s",element[i].name);
-    		}
-		}
-		int main(void)
-		{
-    		struct table element[10];//object for structure
-    		char c;
-    		int i;
-    		do{
-        		printf("\nHere you can create periodic table");
-        		printf("\nHow many elements you want to enter = "); //number of elements you want to insert limit is 10
-        		scanf("%d",&n);
-        		for(i=0;i<n;i++)
-        		{
-            		printf("\nEnter the name of element = ");
-            		fflush(stdin);
-            		scanf("%s",element[i].name);
-            		printf("Enter the atomic weight = ");
-            		fflush(stdin);
-            	scanf("%f",&element[i].wt);
-            	printf("Enter the symbol of element = ");
-            	fflush(stdin);
-            	scanf("%s",element[i].symbol);
-            	printf("\n");
-        		}
-        		display(element);//calling function
-        		printf("\nDo you want to continue(yY)? = ");
-        		fflush(stdin);
-        		scanf("%c",&c);
-    		}while(c=='y' || c=='Y');
-    		printf("\nThank You");
-    		return 0;
-		}
-	</p>
+	<a href="C:\Users\My Asus\Desktop\code.txt">click here</a>
 </body>
 </html>
